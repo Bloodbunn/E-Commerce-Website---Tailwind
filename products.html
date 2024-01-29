@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="m-0 p-0 box-border">
+
+    <header class="px-5 max-md:px-1 pt-6 py-10">
+        <nav class="flex justify-between items-center max-md:relative">
+            <div class="cursor-pointer">
+                <img src="images/logo.png" class="w-32 h-9 ml-5">
+            </div>
+
+            <div class="flex px-5 max-md:p-0  ">
+                <ul id="menuList"
+                    class="flex items-center max-md:flex-col max-md:absolute max-md:top-16 max-md:left-0 max-md:max-h-0 max-md:overflow-hidden max-md:w-full max-md:text-white max-md:bg-gray-800 transition-all duration-500 ease-linear mr-8 gap-8 max-md:gap-4 text-gray-500 font-semibold">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+
+                </ul>
+                <a href="cart.html"><img src="images/cart.png" class="w-8 h-8 max-md:mr-3"></a>
+                <button onclick="menuToggle()"> <img src="images/menu.png"
+                        class="w-8 h-8 hidden max-md:ml-2 max-md:inline-block cursor-pointer"></button>
+            </div>
+        </nav>
+
+       
+    </header>
+
+    <!--_____________________all products_____________________-->
+    <div class="px-[10%] max-sm:px-2 mt-24 max-md:mt-16">
+        <div class="flex justify-between">
+            <h3 class="text-2xl font-bold max-md:text-lg">All Products</h3>
+            <select name="" id="" class="border border-red-400 px-4 py-1 max-md:p-1 text-xs focus:outline-none font-semibold">
+                <option value="">Default Sorting</option>
+                <option value="">Popular</option>
+                <option value="">Rating</option>
+                <option value="">Price</option>
+
+            </select>
+        </div>
+
+
+        <div class="flex justify-center max-md:flex-col max-md:items-center gap-4 mt-16">
+            <div class="text-left hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-1.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-2.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-3.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-4.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center max-md:flex-col max-md:items-center gap-4 mt-5">
+            <div class="text-left hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-5.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-6.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-7.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-8.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center max-md:flex-col max-md:items-center gap-4 mt-5">
+            <div class="text-left hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-9.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-10.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-11.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+
+            <div class="hover:-translate-y-3 transition-all duration-500">
+                <img src="images/product-12.jpg" class="w-60">
+                <h3 class="text-slate-600 font-[500] mt-2">Red-Printed T-Shirt</h3>
+                <span class="text-slate-600 text-sm">$50.00</span>
+                <div class="text-orange-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-16 space-x-2 ">
+          <a href=""><span class="border border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-all duration-300">1</span></a>  
+           <a href=""><span class="border border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-all duration-300">2</span></a> 
+           <a href=""><span class="border border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-all duration-300">3</span></a>
+           <a href=""><span class="border border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-all duration-300">4</span></a> 
+           <a href=""><span class="border border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-all duration-300">→</span></a> 
+
+        </div>
+
+
+    </div>
+
+    <footer class="bg-black text-white text-center  mt-24 max-md:mt-16 px-6 max-md:px-2 pt-10 max-md:pt-5 pb-5 ">
+        <div class="flex justify-between max-md:flex-col max-md:gap-7">
+            <div class="flex-1 space-y-4 text-left">
+                <h4 class="text-white font-bold text-lg max-md:text-center">Download Our App</h4>
+                <p class=" text-gray-500 text-sm max-md:text-center">Download App for Android and IOS mobile phone</p>
+                <div class="max-md:flex max-md:flex-col max-md:items-center max-md:space-y-2">
+                    <img src="images/app-store.png" class="w-32 inline-block cursor-pointer">
+                    <img src="images/play-store.png" class="w-32 ml-2 max-md:ml-0 inline-block cursor-pointer">
+                </div>
+               
+            </div>
+            <div class="flex-1 space-y-4">
+                <img src="images/logo-white.png" class="w-44  mx-auto">
+                <p class=" text-gray-500 text-sm">Our Purpose Is To Sustainably Make The Pleasure <br> And Benefits Of
+                    Sports Accessible To The Many</p>
+            </div>
+            <div class="flex-1">
+                <div class="flex justify-around">
+                    <div class="space-y-4">
+                        <h4 class="text-white font-bold text-lg">Useful Links</h4>
+                        <ul class=" text-gray-500 text-sm">
+                            <li>Coupons</li>
+                            <li>Blog Posts</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliates</li>
+
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-white font-bold text-lg">Follow Us</h4>
+                        <ul class=" text-gray-500 text-sm">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                            <li>Instagram</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <hr class="w-full h-2 mt-10 text-gray-600">
+        <p class="text-gray-500 mt-3 text-sm">Copyright 2024 Bloodbunn</p>
+
+
+
+
+
+    </footer>
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        function menuToggle() {
+            if (menuList.classList.contains("max-md:max-h-0")) {
+                menuList.classList.remove("max-md:max-h-0");
+                menuList.classList.add("max-md:max-h-96");
+
+            } else {
+                menuList.classList.remove("max-md:max-h-96");
+                menuList.classList.add("max-md:max-h-0");
+
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

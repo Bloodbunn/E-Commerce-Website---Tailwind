@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #account {
+            background: radial-gradient(#fff, #ffd6d6);
+
+        }
+    </style>
+
+</head>
+
+<body class="m-0 p-0 box-border">
+
+    <header class="px-5 max-md:px-1 pt-6 py-10">
+        <nav class="flex justify-between items-center max-md:relative">
+            <div class="cursor-pointer">
+                <img src="images/logo.png" class="w-32 h-9 ml-5">
+            </div>
+
+            <div class="flex px-5 max-md:p-0  ">
+                <ul id="menuList"
+                    class="flex items-center max-md:flex-col max-md:absolute max-md:top-16 max-md:left-0 max-md:max-h-0 max-md:overflow-hidden max-md:w-full max-md:text-white max-md:bg-gray-800 transition-all duration-500 ease-linear mr-8 gap-8 max-md:gap-4 text-gray-500 font-semibold">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+
+                </ul>
+                <a href="cart.html"><img src="images/cart.png" class="w-8 h-8 max-md:mr-3"></a>
+                <button onclick="menuToggle()"> <img src="images/menu.png"
+                        class="w-8 h-8 hidden max-md:ml-2 max-md:inline-block cursor-pointer"></button>
+            </div>
+        </nav>
+
+       
+    </header>
+
+
+    <!--__________________login________________-->
+
+
+    <div class="flex justify-between max-sm:flex-col mt-6 py-10 " id="account">
+        <div class="flex-1">
+            <img src="images/image1.png" class="w-full px-3">
+        </div>
+
+        <div class="flex-1 mt-16 max-md:mt-3 max-md:px-3   ">
+            <div class="relative overflow-hidden  bg-white shadow-lg shadow-slate-500 w-72 max-sm::w-60 h-96 mx-auto ">
+                <div class="text-center py-4 px-6">
+                    <span class="text-gray-800 font-bold mr-7 cursor-pointer" onclick="loginFx()">Login</span>
+                    <span class="text-gray-800 font-bold cursor-pointer" onclick="registerFx()">Register</span>
+                    <hr class=" w-20 h-1 bg-red-500 transform translate-x-[120px] mt-2 transition-transform duration-500 " id="indicator">
+                </div>
+
+                
+                <form action="" id="login" class="absolute -left-[300px] top-24 w-[300px] space-y-4 px-5 max-md:px-2 transition-transform duration-500">
+                    <input type="text" placeholder="Username" class="w-full p-2 border-gray-300 border text-sm">
+                    <input type="password" name="" id="" placeholder="Password"
+                        class="w-full p-2 border-gray-300 border text-sm">
+                    <button class="px-6 py-2 bg-red-500 rounded-full text-white block w-full ">Login</button>
+                    <p class="text-sm text-gray-500 cursor-pointer text-center">Forgot Password?</p>
+
+                </form>
+
+                <form action="" id="register" class="absolute left-0  top-24 max-w-[300px] space-y-4 px-5 max-md:px-2 transition-transform duration-500">
+                    <input type="text" placeholder="Username" class="w-full p-2 border-gray-300 border text-sm">
+                    <input type="email" placeholder="Email" class="w-full p-2 border-gray-300 border text-sm">
+                    <input type="password" name="" id="" placeholder="Password"
+                        class="w-full p-2 border-gray-300 border text-sm">
+                    <button class="px-6 py-2 bg-red-500 rounded-full text-white block w-full ">Register</button>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <footer class="bg-black text-white text-center  mt-24 max-md:mt-16 px-6 max-md:px-2 pt-10 max-md:pt-5 pb-5 ">
+        <div class="flex justify-between max-md:flex-col max-md:gap-7">
+            <div class="flex-1 space-y-4 text-left">
+                <h4 class="text-white font-bold text-lg max-md:text-center">Download Our App</h4>
+                <p class=" text-gray-500 text-sm max-md:text-center">Download App for Android and IOS mobile phone</p>
+                <div class="max-md:flex max-md:flex-col max-md:items-center max-md:space-y-2">
+                    <img src="images/app-store.png" class="w-32 inline-block cursor-pointer">
+                    <img src="images/play-store.png" class="w-32 ml-2 max-md:ml-0 inline-block cursor-pointer">
+                </div>
+               
+            </div>
+            <div class="flex-1 space-y-4">
+                <img src="images/logo-white.png" class="w-44  mx-auto">
+                <p class=" text-gray-500 text-sm">Our Purpose Is To Sustainably Make The Pleasure <br> And Benefits Of
+                    Sports Accessible To The Many</p>
+            </div>
+            <div class="flex-1">
+                <div class="flex justify-around">
+                    <div class="space-y-4">
+                        <h4 class="text-white font-bold text-lg">Useful Links</h4>
+                        <ul class=" text-gray-500 text-sm">
+                            <li>Coupons</li>
+                            <li>Blog Posts</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliates</li>
+
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-white font-bold text-lg">Follow Us</h4>
+                        <ul class=" text-gray-500 text-sm">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                            <li>Instagram</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <hr class="w-full h-2 mt-10 text-gray-600">
+        <p class="text-gray-500 mt-3 text-sm">Copyright 2024 Bloodbunn</p>
+
+
+
+
+
+    </footer>
+
+
+    <script>
+        var login = document.getElementById("login" );
+        var register = document.getElementById("register");
+        var indicator = document.getElementById("indicator");
+
+
+        function loginFx () {
+           login.style.transform = "translateX(300px)"
+           register.style.transform = "translateX(300px)"
+           indicator.style.transform = "translateX(30px)"
+        }
+//remeinder that any change to style in javascript will update the style rather than add to ti. so translateX of zero will update it to 0. of 100 will make it 100
+//so it does not add up to the previous translate that is added in the main html.
+        function registerFx () {
+            login.style.transform = "translateX(0px)" //so this zero will update the 300px that was added by the loginFx function and bring the login form back to its normal position
+           register.style.transform = "translateX(0px)"
+           indicator.style.transform = "translateX(120px)"
+
+
+        }
+    </script>
+
+<script>
+    var menuList = document.getElementById("menuList");
+
+    function menuToggle() {
+        if (menuList.classList.contains("max-md:max-h-0")) {
+            menuList.classList.remove("max-md:max-h-0");
+            menuList.classList.add("max-md:max-h-96");
+
+        } else {
+            menuList.classList.remove("max-md:max-h-96");
+            menuList.classList.add("max-md:max-h-0");
+
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>
